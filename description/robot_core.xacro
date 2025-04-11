@@ -93,7 +93,7 @@
     <joint name="left_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="left_wheel"/>
-        <origin xyz="0 0.15 0" rpy="-${pi/2} 0 0" />
+        <origin xyz="0 0.2 0" rpy="-${pi/2} 0 0" />
         <axis xyz="0 0 1"/>
     </joint>
 
@@ -106,7 +106,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
@@ -126,7 +126,7 @@
     <joint name="right_wheel_joint" type="continuous">
         <parent link="base_link"/>
         <child link="right_wheel"/>
-        <origin xyz="0 -0.15 0" rpy="${pi/2} 0 0" />
+        <origin xyz="0 -0.2 0" rpy="${pi/2} 0 0" />
         <axis xyz="0 0 -1"/>
     </joint>
 
@@ -139,7 +139,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
@@ -189,7 +189,7 @@
     <joint name="right_roller_joint1" type="fixed">
         <parent link="base_link"/>
         <child link="right_roller1"/>
-        <origin xyz="0.2 -0.15 0" rpy="${pi/2} 0 0" />
+        <origin xyz="0.2 -0.16 0" rpy="${pi/2} 0 0" />
         <axis xyz="0 0 -1"/>
     </joint>
 
