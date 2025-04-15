@@ -4,20 +4,17 @@
     <xacro:include filename="inertial_macros.xacro"/>
 
 
-    <xacro:property name="chassis_length" value="0.6"/>
-    <xacro:property name="chassis_width" value="0.3"/>
-    <xacro:property name="chassis_height" value="0.15"/>
+    <xacro:property name="chassis_length" value="0.39"/>
+    <xacro:property name="chassis_width" value="0.31"/>
+    <xacro:property name="chassis_height" value="0.08"/>
     <xacro:property name="chassis_mass" value="1.0"/>
     <xacro:property name="wheel_radius" value="0.05"/>
-    <xacro:property name="wheel_thickness" value="0.026"/>
+    <xacro:property name="wheel_thickness" value="0.02"/>
     <xacro:property name="wheel_mass" value="0.05"/>
     <xacro:property name="wheel_offset_x" value="0.226"/>
     <xacro:property name="wheel_offset_y" value="0.1485"/>
     <xacro:property name="wheel_offset_z" value="0.01"/>
-    <xacro:property name="caster_wheel_radius" value="0.05"/>
-    <xacro:property name="caster_wheel_mass" value="0.01"/>
-    <xacro:property name="caster_wheel_offset_x" value="0.075"/>
-    <xacro:property name="caster_wheel_offset_z" value="${wheel_offset_z - wheel_radius + caster_wheel_radius}"/>
+    
 
     <material name="white">
         <color rgba="1 1 1 1" />
@@ -45,9 +42,9 @@
 
     </link>
 
-    <!-- BASE_FOOTPRINT LINK
+    <!-- BASE_FOOTPRINT LINK -->
 
-    <joint name="base_footprint_joint" type="fixed">
+    <!-- <joint name="base_footprint_joint" type="fixed">
         <parent link="base_link"/>
         <child link="base_footprint"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
