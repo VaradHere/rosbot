@@ -12,7 +12,7 @@
     <xacro:property name="wheel_thickness" value="0.045"/>
     <xacro:property name="wheel_mass" value="0.05"/>
     <xacro:property name="wheel_offset_x" value="0.195"/>   
-    <xacro:property name="wheel_offset_y" value="0.1775"/>  
+    <xacro:property name="wheel_offset_y" value="0.2"/>  
     <xacro:property name="wheel_offset_z" value="0.01"/>  
     
 <!-- 0.226
@@ -168,7 +168,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
@@ -199,7 +199,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
@@ -230,7 +230,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
@@ -261,7 +261,7 @@
         </visual>
         <collision>
             <geometry>
-                <cylinder radius="${wheel_radius}" length="${wheel_thickness}"/>
+                <sphere radius="${wheel_radius}"/>
             </geometry>
         </collision>
         <xacro:inertial_cylinder mass="${wheel_mass}" length="${wheel_thickness}" radius="${wheel_radius}">
