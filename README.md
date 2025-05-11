@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides a comprehensive template for quickly setting up a robotic application using ROS2. It includes the necessary configurations, files, and instructions to launch robot simulations, visualize robot states, and integrate control interfaces seamlessly.
+This repository provides a comprehensive template for quickly setting up a autonomous differential drive robot using ROS2. It includes the necessary configurations, files, and instructions to launch robot simulations, visualize robot states, and integrate control interfaces seamlessly.
 This was the part of our Academic Project for the Course Robotics Operating System(ROS) 
 
 ## Features
