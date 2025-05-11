@@ -71,6 +71,7 @@ rosbot/
 ```
 ## Hardware Stack
 **Components Lists**
+
 Raspberry Pi 4
 Serves as the main onboard computer running ROS2 nodes and handling overall robot control and communication.
 
