@@ -35,7 +35,7 @@ Make sure your ROS2 environment is properly set up. Install any required depende
 sudo apt install ros-<ros2-distro>-gazebo-ros-pkgs ros-<ros2-distro>-ros2-control ros-<ros2-distro>-ros2-controllers
 ```
 
-Replace `<ros2-distro>` with your installed ROS2 distribution (e.g., `humble`, `iron`).
+Replace `<ros2-distro>` with your installed ROS2 distribution (e.g., `humble`, `foxy`).
 
 ### Running the Simulation
 
